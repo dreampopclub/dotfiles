@@ -44,7 +44,7 @@ fi
 
 # Opens the github page for the current git repo/branch in your browser
 function gh() {
-  giturl=$(git config --get remote.originh.url)
+  giturl=$(git config --get remote.origin.url)
   if [ "$giturl" == "" ]
     then
      echo "Not a git repository or no remote.origin.url set"
