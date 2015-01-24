@@ -60,5 +60,5 @@ function gh() {
   open $giturl
 }
 
-export EDITOR=emacs
+export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
