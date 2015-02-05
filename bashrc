@@ -4,6 +4,7 @@ alias m3="cd ~/src/m3"
 alias api="cd ~/src/api"
 alias mae="cd ~/src/mae"
 alias cms="cd ~/src/cms"
+alias chef="cd ~/src/chef-repo"
 alias sourceit="source ~/.bash_profile"
 alias gpull="git pull && git submodule update"
 
