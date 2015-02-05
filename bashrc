@@ -64,3 +64,8 @@ function gh() {
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
+# deal with "Cannot find terminfo entry for 'eterm-color'"
+# when running in emacs ansi-term
+if [ "$TERM" = "eterm-color" ] ; then
+ TERM="vt100"
+fi
