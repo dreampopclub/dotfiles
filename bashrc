@@ -1,24 +1,3 @@
-alias ll="ls -la"
-alias ua="cd ~/src/ua"
-alias m3="cd ~/src/m3"
-alias api="cd ~/src/api"
-alias mae="cd ~/src/mae"
-alias cms="cd ~/src/cms"
-alias chef="cd ~/src/chef-repo"
-alias sourceit="source ~/.bash_profile"
-alias gpull="git pull && git submodule update"
-
-alias uaserver="ua && bundle exec rails s -p3000"
-alias m3server="m3 && bundle exec rails s -p3001"
-alias apiserver="api && bundle exec rails s -p3003"
-alias cmserver="cms && bundle exec rails s -p3002"
-
-alias umae="bundle update maestro_activity_engine"
-
-export M3_APP_PATH=~/src/m3
-
-export PATH=/usr/local/bin:/usr/local/sbin:$HOME/.rvm/bin:$PATH
-
 # get the prompt set up for git
 function parse_git_branch {
   git branch 2>/dev/null | grep '^*' | colrm 1 2 | sed 's_\(.*\)_(\1)_'
