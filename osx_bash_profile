@@ -1,3 +1,5 @@
+export PATH=/usr/local/bin:$PATH
+
 # get the prompt set up for git
 function parse_git_branch {
   git branch 2>/dev/null | grep '^*' | colrm 1 2 | sed 's_\(.*\)_(\1)_'
