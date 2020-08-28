@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/opt/ruby/bin:/usr/local/bin:$PATH
 
 # get the prompt set up for git
 function parse_git_branch {
