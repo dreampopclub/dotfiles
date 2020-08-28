@@ -18,7 +18,7 @@ GRAY="\[\033[1;30m\]"
 LIGHT_GRAY="\[\033[0;37m\]"
 NONE="\[\033[0m\]"
 
-export PS1="$BLUE\w$GRAY \$(~/.rvm/bin/rvm-prompt i v g):$GREEN\$(parse_git_branch)$RED\$(git_dirty)$NONE\$ "
+export PS1="$BLUE\w:$GREEN\$(parse_git_branch)$RED\$(git_dirty)$NONE\$ "
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
