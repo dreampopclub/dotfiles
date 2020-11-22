@@ -1,4 +1,4 @@
-export PATH=/usr/local/opt/ruby/bin:/usr/local/bin:$PATH
+export PATH=/urs/local/opt:/usr/local/opt/ruby/bin:/usr/local/bin:$PATH
 
 # get the prompt set up for git
 function parse_git_branch {
@@ -42,11 +42,14 @@ function gh() {
   open $giturl
 }
 
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+#alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+#export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+export EDITOR="/usr/local/opt/emacs -nw"
 
 # deal with "Cannot find terminfo entry for 'eterm-color'"
 # when running in emacs ansi-term
 if [ "$TERM" = "eterm-color" ] ; then
  TERM="vt100"
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
